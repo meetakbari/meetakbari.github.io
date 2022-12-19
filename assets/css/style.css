@@ -2,13 +2,9 @@
   #style.css
 \*-----------------------------------*/
 
-
 /**
  * copyright 2022 @codewithsadee
  */
-
-
-
 
 
 /*-----------------------------------*\
@@ -233,6 +229,7 @@ article.active {
   border: 1px solid var(--white-1);
   border-radius: 5px;
   margin: 5px 10px 5px 0px;
+  font-size: var(--fs-7);
 }
 
 .h2,
@@ -363,7 +360,7 @@ main {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-9);
+  font-size: var(--fs-5);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
@@ -493,7 +490,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-5);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -516,7 +513,7 @@ main {
 .about-text {
   color: var(--light-gray);
   font-size: var(--fs-4);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-500);
   line-height: 2.0;
 }
 
@@ -846,10 +843,10 @@ main {
 }
 
 .timeline-text {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
+  color: var(--white-2);
+  font-weight: var(--fw-400);
   line-height: 1.9;
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
 }
 
 
@@ -891,9 +888,23 @@ main {
 } */
 
 .my-skills-container {
+  margin-top: -20px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: left;
+  flex-direction: column;
+}
+
+.skills-list-title {
+  color: var(--white-1);
+  margin-left: 60px;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+}
+.skills-list {
   display: flex;
   /* border: 1px solid salmon; */
-  margin: 10px 0px 45px 60px;
+  margin: 5px 0px 15px 60px;
   flex-direction: row;
   flex-flow: wrap;
 }
@@ -907,6 +918,7 @@ main {
   background-color: var(--orange-yellow-crayola);
   color: black;
   font-weight: var(--fw-500);
+  font-size: var(--fs-5);
 }
 
 .my-skills-title-wrapper {
@@ -1096,8 +1108,8 @@ main {
 }
 
 .project-link .open-icon {
-  padding-left: 5px;
-  font-size: large;
+  padding-left: 4px;
+  font-size: var(--fs-5);
 }
 
 
@@ -1116,7 +1128,7 @@ main {
 
 .volunteer-exp-subtitle {
   color: var(--vegas-gold);
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   padding: 3px 10px 3px 0px;
   display: flex;
   flex-direction: row;
@@ -1130,8 +1142,8 @@ main {
 }
 
 .volunteer-exp-subtitle .open-icon {
-  padding-left: 5px;
-  font-size: large;
+  padding-left: 3px;
+  font-size: var(--fs-5);
 }
 
 .achievements-list {
@@ -1144,7 +1156,7 @@ main {
 }
 
 .achievement {
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   color: var(--white-1);
   padding: 3px 10px;
   border: 1px solid var(--white-1);
@@ -1155,6 +1167,12 @@ main {
   flex-direction: row;
   align-items: center;
   width: 100%;
+}
+
+.achievement:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+  cursor: grab;
 }
 
 .certifications-links {
@@ -1217,7 +1235,10 @@ main {
 
 .contact-form { margin-bottom: 10px; }
 
-.form-title { margin-bottom: 20px; }
+.form-title { 
+  margin-bottom: 20px; 
+  font-size: var(--fs-4);
+}
 
 .input-wrapper {
   display: grid;
@@ -1306,10 +1327,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .credits-text {
-  font-size: var(--fs-4);
+  font-size: var(--fs-5);
   display: flex;
   flex-direction: row;
-  
   margin: 5px;
 }
 
@@ -1354,8 +1374,129 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/**
+ * responsive larger than 320px screen
+ */
 
+@media (max-width: 580px) {
+  :root {
 
+    /**
+     * typography
+     */
+
+    --fs-1: 22px;
+    --fs-2: 20px;
+    --fs-3: 18px;
+    --fs-4: 16px;
+    --fs-5: 14px;
+    --fs-6: 12px;
+    --fs-7: 11px;
+    --fs-8: 10px;
+
+  }
+
+  .navbar-link {
+    color: var(--white-1);
+    font-weight: var(--fw-500);
+    font-size: var(--fs-6);
+  }
+  .about-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    line-height: 2.0;
+  }
+
+  .timeline-item-title {
+    font-size: var(--fs-5);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item-subtitle {
+    color: var(--vegas-gold);
+    font-size: var(--fs-6);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .timeline .title-wrapper h2 {
+    font-size: var(--fs-2);
+  }
+
+  .article-title {
+    position: relative;
+    padding-bottom: 7px;
+    padding-top: 5px;
+  }
+
+  .my-skills-title-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .my-skills-title-wrapper h2 {
+    font-size: var(--fs-2);
+  }
+
+  .my-skills-container {
+    display: flex;
+    /* border: 1px solid salmon; */
+    margin: 10px 0px 15px 40px;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+
+  .my-skill {
+    font-size: var(--fs-7);
+  }
+
+  .project-link {
+    font-size: var(--fs-6);
+  }
+
+  .achievement {
+    margin: 8px 5px 5px 35px;
+  }
+
+  .certifications-links {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .certifications-link {
+    font-size: var(--fs-6);
+    margin: 8px 5px 0px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .certifications-links .open-icon {
+    padding-left: 5px;
+    font-size: var(--fs-2);
+  }
+
+  .credits-text {
+    font-size: var(--fs-7);
+  }
+
+  .skills-list-title {
+    color: var(--white-1);
+    margin-left: 5px;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-500);
+    margin-bottom: -5px;
+  }
+  .skills-list {
+    display: flex;
+    /* border: 1px solid salmon; */
+    margin: 5px 0px 15px 5px;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+}
 
 /**
  * responsive larger than 580px screen
@@ -1374,8 +1515,8 @@ textarea.form-input::-webkit-resizer { display: none; }
      */
 
     --fs-1: 32px;
-    --fs-2: 24px;
-    --fs-3: 26px;
+    --fs-2: 26px;
+    --fs-3: 24px;
     --fs-4: 18px;
     --fs-6: 15px;
     --fs-7: 15px;
@@ -1383,7 +1524,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
+  .navbar-link {
+    color: var(--white-1);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-6);
+  }
 
   /**
    * #REUSED STYLE
@@ -1983,6 +2128,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
+  .timeline-text { max-width: 720px; }
 
 }

@@ -192,11 +192,17 @@
 
         <section class="about-text">
           <p>
-            I'm a Software Engineer from India, working in the web(backend) development.
+            I'm a Software Engineer &#128104;&#8205;&#128187; from India, working in the web(backend) development.
             I enjoy learning and writing about Personal Finance and Software Engineering.
             I strongly believe in "The process is important, regardless of the outcome" and
             that exactly reflects my personality.
           </p>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1oKQHk__Gptl8FLGgl663LfEyfZZaBbJL/view?usp=share_link"
+              target="_blank" class="project-link">
+              Download Resume <ion-icon name="open-outline" class="open-icon"></ion-icon>
+            </a>
+          </div>
         </section>
 
         <!-- 
@@ -216,7 +222,7 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h3 class="h3 timeline-item-title">Undergraduate Researcher [Software Engineering Internship]</h3>
+              <h3 class="h4 timeline-item-title">Undergraduate Researcher [Software Engineering Internship]</h3>
               <h4 class="h4 timeline-item-subtitle"><span>January 2022 — May 2022 | @Ahmedabad University | Ahmedabad,
                   India</span></h4>
               <p class="timeline-text">
@@ -271,21 +277,50 @@
             <h2 class="h2" id="skills">Skills</h2>
           </div>
           <div class="my-skills-container">
-            <span class="my-skill">Python</span>
-            <span class="my-skill">Java</span>
-            <span class="my-skill">SQL</span>
-            <span class="my-skill">Javascript</span>
-            <span class="my-skill">C/C++</span>
-            <span class="my-skill">Django</span>
-            <span class="my-skill">NodeJS</span>
-            <span class="my-skill">Spring-boot</span>
-            <span class="my-skill">PostgreSQL</span>
-            <span class="my-skill">MongoDB</span>
-            <span class="my-skill">Git</span>
-            <span class="my-skill">Linux</span>
-            <span class="my-skill">Pandas</span>
-          </div>
+            <div class="skills-list-title">
+              <p>Programming Languages</p>
+            </div>
+            <div class="skills-list">
+              <span class="my-skill">Python</span>
+              <span class="my-skill">Java</span>
+              <span class="my-skill">SQL</span>
+              <span class="my-skill">Javascript</span>
+              <span class="my-skill">C/C++</span>
+            </div>
+            <div class="skills-list-title">
+              <p>Frameworks/Libraries</p>
+            </div>
+            <div class="skills-list">
+              <span class="my-skill">Django</span>
+              <span class="my-skill">NodeJS</span>
+              <span class="my-skill">Spring-boot</span>
+              <span class="my-skill">Pandas</span>
+            </div>
+            <div class="skills-list-title">
+              <p>Databases</p>
+            </div>
+            <div class="skills-list">
+              <span class="my-skill">MySQL</span>
+              <span class="my-skill">PostgreSQL</span>
+              <span class="my-skill">MongoDB</span>
+            </div>
+            <div class="skills-list-title">
+              <p>Other Tools/Technologies</p>
+            </div>
+            <div class="skills-list">
+              <span class="my-skill">Git</span>
+              <span class="my-skill">Linux</span>
+            </div>
+            <div class="skills-list-title">
+              <p>Familiar With/Other Skills</p>
+            </div>
+            <div class="skills-list">
+              <span class="my-skill">Docker</span>
+              <span class="my-skill">REST API Design</span>
+              <span class="my-skill">ReactJS</span>
+            </div>
 
+          </div>
         </section>
 
       </article>
@@ -490,7 +525,7 @@
       <article class="more" data-page="more">
 
         <header>
-          <h2 class="h2 article-title">More About My Journey So Far</h2>
+          <h2 class="h2 article-title">More About My Journey</h2>
         </header>
 
         <!-- Volunteer Experience 
@@ -519,7 +554,7 @@
                 </div>
               </h4>
               <p class="timeline-text">
-                &#x2022; As a lead organizer, earnestly involved in bringing sponsors, speakers and judges for the
+                As a lead organizer, earnestly involved in bringing sponsors, speakers and judges for the
                 hackathon. With a team of 3,
                 managed 120+ participants smoothly for 48 hours of the hackathon on Discord.<br>
               <div class="experience-techs">
@@ -542,7 +577,7 @@
                 </div>
               </h4>
               <p class="timeline-text">
-                &#x2022; Planned, coordinated and managed different Events as a Technical Events Team Coordinator for
+                Planned, coordinated and managed different Events as a Technical Events Team Coordinator for
                 Ingenium'21 the
                 annual Techfest of Ahmedabad University held on 1-4 April'21.<br>
               <div class="experience-techs">
@@ -563,9 +598,9 @@
                 </div>
               </h4>
               <p class="timeline-text">
-                &#x2022; Volunteered with the Business Dev department, headed a team of 3, and gained useful leadership
-                & team management
-                experience. Organized an SDGs-based Virtual Business Idea Hackathon with the participation of 35+
+                Volunteered with the Business Development department, headed a team of 3, and gained useful leadership
+                & team management experience. Organized an SDGs-based Virtual Business Idea Hackathon with the
+                participation of 35+
                 participants.<br>
               <div class="experience-techs">
                 <b class="experience-tech">Leadership</b>
@@ -650,25 +685,25 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Me</h3>
+          <h3 class="h3 form-title">Knock my door for tech and finance discussion anytime &#128579</h3>
 
-          <form action="#" class="form" data-form>
-
+          <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" id="fullName" class="form-input" placeholder="Full name" required
+                data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" id="emailId" class="form-input" placeholder="Email address" required
+                data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea id="message" class="form-input" placeholder="Your Message" required
+              data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
 
         <section class="credits">
