@@ -1112,8 +1112,29 @@ main {
   font-size: var(--fs-5);
 }
 
+/* EDUCATION > UnderGraduate Courses  */
+.my-courses-container {
+  margin-top: -10px;
+  margin-left: 60px;
+  display: flex;
+  justify-content: left;
+  /* align-items: center; */
+  flex-direction: row;
+  flex-flow: wrap;
+}
 
 
+.my-course {
+  color: var(--orange-yellow-crayola);
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin: 5px 10px 5px 0px;
+  background-color: var(--orange-yellow-crayola);
+  color: black;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-5);
+  width: fit-content;
+}
 /*-----------------------------------*\
   #MORE (Volunteer Exp., Certificates, ...)
 \*-----------------------------------*/
@@ -1495,6 +1516,29 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 5px 0px 15px 5px;
     flex-direction: row;
     flex-flow: wrap;
+  }
+
+  .my-courses-container {
+    margin-top: -10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  
+  
+  .my-course {
+    color: var(--orange-yellow-crayola);
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin: 5px 5px 2px 0px;
+    background-color: var(--orange-yellow-crayola);
+    color: black;
+    font-weight: var(--fw-500);
+    font-size: var(--fs-7);
+    width: fit-content;
   }
 }
 
