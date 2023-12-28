@@ -895,7 +895,13 @@ main {
   flex-direction: column;
 }
 
+.skills-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills-list-title {
+  display: block;
   color: var(--white-1);
   margin-left: 60px;
   font-size: var(--fs-4);
