@@ -17,7 +17,7 @@
 
   /* gradient */
 
-  --bg-gradient-onyx: linear-gradient(
+  /* --bg-gradient-onyx: linear-gradient(
     to bottom right,
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
@@ -48,11 +48,48 @@
     to right,
     hsl(28, 100%, 85%),
     hsl(21, 100%, 77%)
-  );
+  ); */
+--bg-gradient-onyx: linear-gradient(
+  to bottom right,
+  hsl(60, 5%, 75%) 3%,  /* Lighter variant */
+  hsl(0, 0%, 90%) 97%   /* Lighter variant */
+);
+
+--bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(60, 5%, 72%, 0.251) 0%,  /* Lighter variant */
+    hsla(60, 5%, 79%, 0) 100%    /* Lighter variant */
+  ),
+  hsl(60, 5%, 87%);  /* Lighter variant */
+
+--bg-gradient-yellow-1: linear-gradient(
+  to bottom right,
+  hsl(21, 100%, 97%) 0%,  /* Lighter variant */
+  hsla(36, 100%, 91%, 0) 50%  /* Lighter variant */
+);
+
+--bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(45, 100%, 91%, 0.251) 0%,  /* Lighter variant */
+    hsla(35, 100%, 88%, 0) 59.86%   /* Lighter variant */
+  ),
+  hsl(60, 5%, 87%);  /* Lighter variant */
+
+--border-gradient-onyx: linear-gradient(
+  to bottom right,
+  hsl(0, 0%, 75%) 0%,  /* Lighter variant */
+  hsla(0, 0%, 75%, 0) 50%  /* Lighter variant */
+);
+
+--text-gradient-yellow: linear-gradient(
+  to right,
+  hsl(28, 100%, 15%),  /* Lighter variant */
+  hsl(21, 100%, 25%)   /* Lighter variant */
+);
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
+  /* --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -63,7 +100,20 @@
   --vegas-gold: hsl(21, 100%, 77%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --bittersweet-shimmer: hsl(0, 43%, 51%); */
+--jet: hsl(0, 0%, 78%);  /* Vice-versa of black */
+--onyx: hsl(240, 1%, 83%);  /* Vice-versa of black */
+--eerie-black-1: hsl(240, 2%, 87%);  /* Vice-versa of black */
+--eerie-black-2: hsl(240, 2%, 88%);  /* Vice-versa of black */
+--smoky-black: hsl(0, 0%, 93%);  /* Vice-versa of black */
+--white-1: hsl(0, 0%, 0%);  /* Vice-versa of white */
+--white-2: hsl(0, 0%, 2%);  /* Vice-versa of white */
+--orange-yellow-crayola: hsl(28, 100%, 15%);  /* Vice-versa of white */
+--vegas-gold: hsl(21, 100%, 23%);  /* Vice-versa of white */
+--vegas-gold-light: hsl(23, 100%, 15%);
+--light-gray: hsl(0, 0%, 16%);  /* Vice-versa of white */
+--light-gray-70: hsla(0, 0%, 16%, 0.7);  /* Vice-versa of white */
+--bittersweet-shimmer: hsl(15, 43%, 75%);  /* Vice-versa of white */
 
   /**
    * typography
@@ -243,9 +293,10 @@ article.active {
 }
 
 .experience-tech {
-  color: var(--orange-yellow-crayola);
+  background-color: var(--vegas-gold-light);
+  color: white;
   padding: 3px 10px;
-  border: 1px solid var(--white-1);
+  border: 1px solid var(--vegas-gold-light);
   border-radius: 5px;
   margin: 5px 10px 5px 0px;
   font-size: var(--fs-7);
@@ -498,7 +549,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--bg-gradient-yellow-2);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -863,14 +914,14 @@ main {
 }
 
 .timeline-item-title {
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   line-height: 1.3;
   margin-bottom: 10px;
 }
 
 .timeline-item-subtitle {
   color: var(--vegas-gold);
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   line-height: 1.3;
   margin-bottom: 10px;
 }
@@ -906,7 +957,7 @@ main {
   color: var(--white-2);
   font-weight: var(--fw-400);
   line-height: 1.9;
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
 }
 
 /**
@@ -975,13 +1026,12 @@ main {
 }
 
 .my-skill {
-  color: var(--orange-yellow-crayola);
+  color: white;
   padding: 3px 10px;
   /* border: 1px solid var(--white-1); */
   border-radius: 5px;
   margin: 5px 10px 5px 0px;
-  background-color: var(--orange-yellow-crayola);
-  color: black;
+  background-color: var(--vegas-gold-light);
   font-weight: var(--fw-500);
   font-size: var(--fs-5);
 }
@@ -1209,12 +1259,11 @@ main {
 }
 
 .my-course {
-  color: var(--orange-yellow-crayola);
   padding: 3px 10px;
   border-radius: 5px;
   margin: 5px 10px 5px 0px;
-  background-color: var(--orange-yellow-crayola);
-  color: black;
+  color: var(--vegas-gold);
+  border: 2px solid var(--vegas-gold-light);
   font-weight: var(--fw-500);
   font-size: var(--fs-5);
   width: fit-content;
@@ -1233,7 +1282,7 @@ main {
 
 .volunteer-exp-subtitle {
   color: var(--vegas-gold);
-  font-size: var(--fs-6);
+  font-size: var(--fs-4);
   padding: 3px 10px 3px 0px;
   display: flex;
   flex-direction: row;
